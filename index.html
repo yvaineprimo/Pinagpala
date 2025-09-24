@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinagpala Village</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+     <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">PINAGPALA VILLAGE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map-section">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#accessibility">Nearby</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#lots">Lots</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <!-- Overlay for better text contrast -->
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"
+      ></div>
+
+      <div class="container text-center fade-in" id="hero-content">
+        <!-- MAIN HEADLINE: "ONLY 9 SLOTS LEFT!" -->
+        <h1 class="display-3 fw-bold mb-3">
+          ONLY <span class="highlight-number">9</span> SLOTS LEFT!
+        </h1>
+
+        <!-- Supporting Subhead -->
+        <p class="lead mb-4">
+          Secure your prime lot in Orani before it’s gone.
+        </p>
+
+        <!-- CTA BUTTON -->
+        <a href="#lots" class="btn btn-primary btn-lg mt-3 px-5"
+          >RESERVE YOURS NOW →</a
+        >
+      </div>
+    </section>
+
+  
+   <!-- VICINITY MAP -->
+<section id="map-section">
+    <div class="container fade-in">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Vicinity Map</h2>
+            <p class="text-muted">Click the map to zoom in. Download available.</p>
+        </div>
+
+        <!-- CLICKABLE MAP IMAGE -->
+        <div class="text-center">
+            <img src="./assets/images/vicinity.png" 
+                 class="img-fluid rounded-3 shadow-sm border"
+                 alt="Vicinity Map"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#mapModal"
+                 style="max-height: 500px; cursor: pointer; transition: transform 0.3s;"
+                 onmouseover="this.style.transform='scale(1.02)'"
+                 onmouseout="this.style.transform='scale(1)'"
+                 onclick="event.preventDefault();">
+        </div>
+
+      
+    </div>
+</section>
+
+<!-- ZOOM MODAL -->
+<div class="modal fade" id="mapModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bold">Vicinity Map — Detailed View</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="./assets/images/vicinity.png" 
+                     class="img-fluid" 
+                     alt="Zoomed Vicinity Map">
+            </div>
+            <div class="modal-footer justify-content-between">
+                <a href="./assets/images/vicinity.png" 
+                   download="orani_vicinity_map_highres.jpg"
+                   class="btn btn-success px-4">
+                    <i class="fas fa-download me-2"></i> Download HD Map
+                </a>
+                <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ACCESSIBILITY -->
+    <section id="accessibility">
+      <div class="container fade-in">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Nearby Landmarks</h2>
+          <p class="text-muted">
+            Conveniently located near essential establishments.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="access-card">
+              <i class="fas fa-church"></i>
+              <h5>765m from Minor Basilica of Orani</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="access-card">
+              <i class="fas fa-shopping-basket"></i>
+              <h5>1.5km from Orani Public Market</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="access-card">
+              <i class="fas fa-school"></i>
+              <h5>85m from Orani National High School - Annex</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="access-card">
+              <i class="fas fa-user-graduate"></i>
+              <h5>267m from Orani South Elementary School</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="access-card">
+              <i class="fas fa-monument"></i>
+              <h5>765m from Orani Town Plaza</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="access-card">
+              <i class="fas fa-university"></i>
+              <h5>1.2km from BPSU Orani Campus</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVAILABLE LOTS (TEXT ONLY) -->
+    <section id="lots">
+      <div class="container fade-in">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Available Lots</h2>
+          <p class="text-muted">
+            Click any lot to view flexible payment terms and monthly
+            amortization.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- LOT 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">PRIME LOT</div>
+              <h5>Lot #001</h5>
+              <div class="lot-price">₱660,000</div>
+              <p><strong>Price/sqm:</strong> ₱5,500</p>
+              <p><strong>Total Area:</strong> 120 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">CORNER SUNRISE</div>
+              <h5>Lot #002</h5>
+              <div class="lot-price">₱780,000</div>
+              <p><strong>Price/sqm:</strong> ₱5,200</p>
+              <p><strong>Total Area:</strong> 150 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">SUNRISE LOT</div>
+              <h5>Lot #003</h5>
+              <div class="lot-price">₱637,000</div>
+              <p><strong>Price/sqm:</strong> ₱4,900</p>
+              <p><strong>Total Area:</strong> 130 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">CORNER</div>
+              <h5>Lot #004</h5>
+              <div class="lot-price">₱638,000</div>
+              <p><strong>Price/sqm:</strong> ₱5,800</p>
+              <p><strong>Total Area:</strong> 110 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal4"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">PRIME LOT</div>
+              <h5>Lot #005</h5>
+              <div class="lot-price">₱770,000</div>
+              <p><strong>Price/sqm:</strong> ₱5,500</p>
+              <p><strong>Total Area:</strong> 140 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal5"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">SUNRISE LOT</div>
+              <h5>Lot #006</h5>
+              <div class="lot-price">₱784,000</div>
+              <p><strong>Price/sqm:</strong> ₱4,900</p>
+              <p><strong>Total Area:</strong> 160 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal6"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 7 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">CORNER SUNRISE</div>
+              <h5>Lot #007</h5>
+              <div class="lot-price">₱650,000</div>
+              <p><strong>Price/sqm:</strong> ₱5,200</p>
+              <p><strong>Total Area:</strong> 125 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal7"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 8 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">PRIME LOT</div>
+              <h5>Lot #008</h5>
+              <div class="lot-price">₱550,000</div>
+              <p><strong>Price/sqm:</strong> ₱5,500</p>
+              <p><strong>Total Area:</strong> 100 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal8"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+
+          <!-- LOT 9 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="lot-card">
+              <div class="lot-type">CORNER</div>
+              <h5>Lot #009</h5>
+              <div class="lot-price">₱783,000</div>
+              <p><strong>Price/sqm:</strong> ₱5,800</p>
+              <p><strong>Total Area:</strong> 135 sqm</p>
+              <button
+                class="btn btn-outline-primary w-100 mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal9"
+              >
+                View Payment Plans
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODALS (EXAMPLE: MODAL 1) -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Payment Plan — Lot #001 (₱660,000)</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Term</th>
+                  <th>Downpayment (20%)</th>
+                  <th>Monthly Amortization</th>
+                  <th>Total Payable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 Year</td>
+                  <td>₱132,000</td>
+                  <td>₱44,000</td>
+                  <td>₱660,000</td>
+                </tr>
+                <tr>
+                  <td>2 Years</td>
+                  <td>₱132,000</td>
+                  <td>₱22,000</td>
+                  <td>₱660,000</td>
+                </tr>
+                <tr>
+                  <td>3 Years</td>
+                  <td>₱132,000</td>
+                  <td>₱14,667</td>
+                  <td>₱660,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Reserve Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title">Payment Plan — Lot #002 (₱780,000)</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Term</th>
+                  <th>Downpayment (20%)</th>
+                  <th>Monthly Amortization</th>
+                  <th>Total Payable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 Year</td>
+                  <td>₱156,000</td>
+                  <td>₱52,000</td>
+                  <td>₱780,000</td>
+                </tr>
+                <tr>
+                  <td>2 Years</td>
+                  <td>₱156,000</td>
+                  <td>₱26,000</td>
+                  <td>₱780,000</td>
+                </tr>
+                <tr>
+                  <td>3 Years</td>
+                  <td>₱156,000</td>
+                  <td>₱17,333</td>
+                  <td>₱780,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Reserve Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODALS 3-9: DUPLICATE ABOVE STRUCTURE AND CHANGE ID & CONTENT -->
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container fade-in">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Project Gallery</h2>
+         
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="./assets/images/lot1.jpg"
+              alt="House 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./assets/images/lot2.jpg"
+              alt="House 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+             src="./assets/images/lot3.png"
+              alt="House 3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./assets/images/lot4.jpg"
+              alt="House 4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./assets/images/lot5.jpg"
+              alt="House 5"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./assets/images/lot6.jpg"
+              alt="House 6"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./assets/images/lot7.jpg"
+              alt="House 7"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./assets/images/lot8.jpg"
+              alt="House 8"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location">
+      <div class="container fade-in">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Exact Location</h2>
+          <p class="text-muted">Kaparangan, Orani, Bataan, Philippines</p>
+        </div>
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2293.703483945982!2d120.53977103539741!3d14.79525415718251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDQ3JzQ0LjEiTiAxMjDCsDMyJzI3LjIiRQ!5e0!3m2!1sen!2sph!4v1758688617863!5m2!1sen!2sph"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container fade-in">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Get in Touch</h2>
+          <p class="text-muted">Have questions? Send us a message.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              class="p-4 p-md-5 border rounded-3 bg-light shadow-sm"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-2">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container text-center">
+        <h5 class="mb-3">PINAGPALA VILLAGE</h5>
+        <p>
+          Bringing premium land ownership within your reach in the thriving town
+          of Orani, Bataan.
+        </p>
+        <div class="footer-links">
+          <a href="#" class="mx-3">Privacy Policy</a>
+          <a href="#" class="mx-3">Terms of Service</a>
+          <a href="#" class="mx-3">FAQ</a>
+        </div>
+        <p class="mt-4 mb-0">
+          &copy; 2025 PINAGPALA VILLAGE. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SCROLL ANIMATION -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Trigger hero animation
+        setTimeout(() => {
+          document.getElementById("hero-content").classList.add("appear");
+        }, 300);
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("appear");
+              }
+            });
+          },
+          {
+            threshold: 0.15,
+          }
+        );
+
+        // Observe all fade-in elements
+        document.querySelectorAll(".fade-in").forEach((el) => {
+          observer.observe(el);
+        });
+      });
+    </script>
+  </body>
+</html>

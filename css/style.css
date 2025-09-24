@@ -257,7 +257,7 @@
             rgba(26, 58, 95, 0.9),
             rgba(26, 58, 95, 0.1)
           ),
-          url("./assets/images/lot6.jpg") center/cover no-repeat;
+          url("../assets/images/lot6.jpg") center/cover no-repeat;
         color: white;
         height: 100vh;
         display: flex;
@@ -330,3 +330,4 @@
         background: rgba(255, 255, 255, 0.9);
 
       }
+

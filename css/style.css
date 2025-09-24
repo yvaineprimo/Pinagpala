@@ -4,13 +4,7 @@
         color: #333;
         overflow-x: hidden;
       }
-      h1,
-      h2,
-      h3,
-      h4 {
-        font-family: "Playfair Display", serif;
-        font-weight: 700;
-      }
+     
 
       /* Smooth Scroll */
       html {
@@ -32,7 +26,7 @@
       section {
         padding: 100px 0;
       }
-     
+    
       #map-section {
         background-color: #f8fafc;
       }
@@ -328,6 +322,5 @@
       }
       #map-section .btn-outline-primary:hover {
         background: rgba(255, 255, 255, 0.9);
-
       }
-
+      

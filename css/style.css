@@ -32,18 +32,7 @@
       section {
         padding: 100px 0;
       }
-      #hero {
-        background: linear-gradient(
-            rgba(26, 58, 95, 0.9),
-            rgba(26, 58, 95, 0.85)
-          ),
-          url("https://source.unsplash.com/random/1920x1080/?luxury-estate")
-            center/cover no-repeat;
-        color: white;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-      }
+     
       #map-section {
         background-color: #f8fafc;
       }
@@ -339,4 +328,5 @@
       }
       #map-section .btn-outline-primary:hover {
         background: rgba(255, 255, 255, 0.9);
+
       }
